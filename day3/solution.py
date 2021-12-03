@@ -12,7 +12,7 @@ def solutionA():
     for i in range(len(data[0])):
         zeros = findBits(data, i, '0')
         ones = findBits(data, i, '1')
-        binary += ('0' if len(zeros) > len(ones) else '1')
+        binary += '0' if len(zeros) > len(ones) else '1'
         
     gamma = int(binary, 2)
     epsilon = gamma ^ 0xfff
